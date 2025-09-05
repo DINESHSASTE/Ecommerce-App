@@ -1,0 +1,15 @@
+# Backend
+target/
+*.class
+*.jar
+*.war
+*.iml
+
+# Frontend
+node_modules/
+build/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

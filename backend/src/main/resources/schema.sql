@@ -1,0 +1,8 @@
+-- Users
+CREATE TABLE users (id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(100) UNIQUE, password VARCHAR(255), role VARCHAR(20));
+-- Products
+CREATE TABLE products (id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), description TEXT, price DECIMAL(10,2), stock INT);
+-- Orders
+CREATE TABLE orders (id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT, total_price DECIMAL(10,2), status VARCHAR(20), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id));
+-- Report Settings
+CREATE TABLE report_setting (id BIGINT AUTO_INCREMENT PRIMARY KEY, frequency VARCHAR(20), email VARCHAR(100));

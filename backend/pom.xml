@@ -1,0 +1,7 @@
+<!-- Spring Boot Maven Placeholder -->
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>ecommerce</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+</project>
